@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Cards Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+            min-height: 100vh;
+           margin-top: 150px;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #a0458c;
+        }
+        .main-heading h1 {
+            font-size: 2em;
+            margin-top: 50px;
+            color: #4CAF50;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+        .main-heading {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #333;
+            padding: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-heading">
+        <h1>This is a small project created by using HTML and CSS</h1>
+    </div>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+        
+            <h2>CHESS</h2>
+            <p>This is CHESS implementation.If you want to see click below button</p>
+            <a href="chess.html" class="btn">Click Here</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          
+            <h2>VIBGYOR</h2>
+            <p>This is VIBGYOR implementation.If you want to see click below button</p>
+            <a href="vibgyor.html" class="btn">Click Here</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            
+            <h2>TIC TAC TOE</h2>
+            <p>This is TIC TAC TOE implementation.If you want to see click below button.</p>
+            <a href="tic.html" class="btn">Click Here</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            
+            <h2>PHOTO ALBUM</h2>
+            <p>This is my  favourite photo album.If you want to see click below buttion</p>
+            <a href="album.html" class="btn">Click Here</a>
+        </div>
+    </div>
+</body>
+</html> 
